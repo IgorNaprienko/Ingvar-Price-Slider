@@ -1,1 +1,2 @@
-"# Ingvar-Price-Slider" 
+Install:
+Скачать zip архив 
