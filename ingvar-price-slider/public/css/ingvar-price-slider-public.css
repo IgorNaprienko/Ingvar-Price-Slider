@@ -1,0 +1,124 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+.ips-container{
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	
+	margin-right: auto;
+    margin-left: auto;
+	border-radius: 10px;
+	background: #fff;
+	position: relative;
+	z-index: 2;
+	padding: 40px 25px;
+	text-align: center;
+	border: 1px solid #333;
+}
+.ips-container * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ips-col-4,.ips-col-5,.ips-col-6,.ips-col-7,.ips-col-8{
+	
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.ips-container:before, .ips-container:after  {
+	content: " ";
+    display: table;
+}
+.ips-container:after  {clear: both;}
+    
+.ips-container input[type=text]{
+	padding-left: 20px;
+    padding-right:20px;
+	margin-bottom:15px;
+    font-size: 14px;
+    width: 100%;
+    height: 48px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #ff9f03;
+    display: block;
+    outline: none;
+	background-color:white;
+}
+.ips-container input[type=text].error{
+	border: 1px solid red;
+}
+.ips-container input[type=text].error:focus{
+	border: 1px solid red;
+		-webkit-box-shadow: 0px 0px 13px 0px rgba(255,0,0,0.5);
+	-moz-box-shadow: 0px 0px 13px 0px rgba(255,0,0,0.5);
+	box-shadow: 0px 0px 13px 0px rgba(255,0,0,0.5);
+}
+.ips-container input[type=text].success{
+	border: 1px solid green;
+}
+.ips-container input[type=text].success:focus{
+	border: 1px solid green;
+-webkit-box-shadow: 0px 0px 13px 0px rgba(0,128,0,0.5);
+-moz-box-shadow: 0px 0px 13px 0px rgba(0,128,0,0.5);
+box-shadow: 0px 0px 13px 0px rgba(0,128,0,0.5);
+}
+.ips-container input[type=text]:focus{
+	-webkit-box-shadow:0px 0px 17px 0px rgba(255,184,5,0.45);
+	-moz-box-shadow:0px 0px 17px 0px rgba(255,184,5,0.45);
+	box-shadow:0px 0px 17px 0px rgba(255,184,5,0.45);
+	background-color:white;
+}
+.ips-button{
+	font-size: 14px;
+	cursor:pointer;
+	text-transform: uppercase;
+	width: 100%;
+    height: 48px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #ff9f03;
+	background: rgb(255,159,3);
+    background: -moz-linear-gradient(top, rgba(255,159,3,1) 0%, rgba(255,119,5,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,159,3,1) 0%,rgba(255,119,5,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,159,3,1) 0%,rgba(255,119,5,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9f03', endColorstr='#ff7705',GradientType=0);
+    border: 1px solid #ff7705;
+    color: #000;
+	text-shadow: 1px 0px 1px rgba(150, 150, 152, 0.7);
+}
+.ips-button:hover,.ips-button:focus{
+	color:#fff;
+	background:rgb(255,188,5);
+	background:-moz-linear-gradient(top, rgba(255,188,5,1) 0%, rgba(255,130,28,1) 100%);
+	background:-webkit-linear-gradient(top, rgba(255,188,5,1) 0%,rgba(255,130,28,1) 100%);
+	background:linear-gradient(to bottom, rgba(255,188,5,1) 0%,rgba(255,130,28,1) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbc05', endColorstr='#ff821c',GradientType=0);
+	outline: none;
+} 
+.ips-form-group {
+	width: 100%;
+	display:table;
+	font-size: 16px;
+	color: #414141;
+	text-align:left;
+    margin-bottom: 15px;
+	margin-left: -15px;
+    margin-right: -15px;
+} 
+.ips-min-price ,.ips-max-price {
+	color: #ff9f03;font-weight:800;
+}
+.ips-responsive .ips-col-4{width: 33.33333333%;float:left;}
+.ips-responsive .ips-col-5{width: 41.66666667%;float:left;}
+.ips-responsive .ips-col-6{width: 50%;float:left;}
+.ips-responsive .ips-col-7{width: 58.33333333%;float:left;}
+.ips-responsive .ips-col-8{width: 66.66666667%;float:left;}
+
